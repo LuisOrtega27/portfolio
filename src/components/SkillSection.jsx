@@ -26,7 +26,7 @@ const SkillSection = ()=>{
                     </div>
 
                     <div className="row rowOdd">
-                        <SkillMeter skillIcon={'./imgs/php-edit-icon.png'} skillToolTip={'Git'} skillRate={40} />
+                        <SkillMeter skillIcon={'./imgs/git-edit-icon.png'} skillToolTip={'Git'} skillRate={40} />
                     </div>
 
                 </div>
