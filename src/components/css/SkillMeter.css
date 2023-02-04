@@ -53,19 +53,20 @@
 
 
 
-.skillNameBg{
+.skillContainer{
     display: flex;
     margin: auto;
     
     height: 90%;
     width: 90%;
 
-    background: #151922;
+    background: var(--mainLight);
     border-radius: 50%;
     
     z-index: 5;
 }
 
 .skillIcon{
+    width: 60%;
     margin: auto;
 }

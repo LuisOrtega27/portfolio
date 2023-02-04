@@ -31,10 +31,8 @@ const SkillMeter = ({skillToolTip, skillIcon, skillRate})=>{
 
             <div className="halfHidder"></div>
 
-            <div className="skillNameBg">
-                <p className="skillIcon">
-                    {skillIcon}
-                </p>    
+            <div className="skillContainer">
+                <img className="skillIcon" src={skillIcon} alt={skillIcon}/>
             </div>
 
         </div>
