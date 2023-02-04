@@ -1,0 +1,71 @@
+
+
+.skillMeter{
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    font-size: 0.8em;
+    
+    border-radius: 50%;
+    overflow: hidden;
+    background: #4b749f; /*para la medicion del skill: #222f3e*/
+    background-origin: padding-box, padding-box;
+
+    z-index: 1;
+}
+
+
+
+.mid1{
+    z-index: 2;
+}
+
+.mid2{
+    display: none;
+    transform: rotate(180deg);
+    
+    z-index: 4;
+}
+
+/*
+  sharp glass -> #4b749f + #243748
+
+  Miracle -> #392d69 + #b57bee
+*/
+.mid1, .mid2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #4b749f 50%, transparent 50%);
+}
+
+
+.halfHidder{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #4b749f 50%, transparent 50%); /* para el medidor de skill: #222f3e*/
+    
+    z-index: 3;
+}
+
+
+
+
+.skillNameBg{
+    display: flex;
+    margin: auto;
+    
+    height: 90%;
+    width: 90%;
+
+    background: #151922;
+    border-radius: 50%;
+    
+    z-index: 5;
+}
+
+.skillIcon{
+    margin: auto;
+}

@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('./components/css/--colors.css');
+
+@import url('./components/css/HeaderArea.css');
+@import url('./components/css/NavMenu.css');
+
+@import url('./components/css/MainArea.css');
+@import url('./components/css/SkillSection.css');
+@import url('./components/css/ProjectSection.css');
+@import url('./components/css/ContactSection.css');
+
+@import url('./components/css/SkillMeter.css');
+@import url('./components/css/ProjectViewer.css');
+
+@import url('./components/css/FooterArea.css');
+
+/* 
+  Móvil: 360 x 640
+  Móvil: 375 x 667
+  Móvil: 360 x 720
+  iPhone X: 375 x 812
+  Pixel 2: 411 x 731
+  Tableta: 768 x 1024
+  Un ordenador portátil: 1366 x 768
+  Un ordenador portátil o desktop de alta resolución: 1920 x 1080
+
+  -------------------------------------------------------------------
+
+  Desktop -> min: 1024
+
+  Tablet -> min: 768 and max: 1023
+
+  Movil -> max: 767
+  
+  -------------------------------------------------------------------
+
+  sharp glass -> #4b749f + #243748
+
+  Miracle -> #392d69 + #b57bee
+  
+*/
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.icon-left{
+  margin-right: 10px;
+}
+.icon-right{
+  margin-left: 10px;
+}
+
+
+
+@media (max-width: 767px){
+  .App{
+    background: var(--mainDark);
   }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

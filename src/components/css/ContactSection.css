@@ -1,0 +1,187 @@
+
+.inputGroup{
+    position: relative;
+    height: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.textAreaGroup{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+#emailMessage{
+    background: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    border: none;
+    resize: none;
+    position: relative;
+    z-index: 2;
+    background: var(--mainDark);
+    padding: 5px;
+    outline: none;
+}
+
+
+.bg-border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 100%;
+    width: 100%;
+    
+    background: linear-gradient(240deg, transparent 20%, #fff);
+    z-index: 1;
+    transition: transform 0.3s ease;
+    border-bottom: solid 2px #fff;
+    /* transform: translateX(-25%); */
+}
+#emailMessage:valid + .bg-border{
+    background: linear-gradient(240deg, transparent 20%, #28e);
+    /* transform: translateX(0%); */
+    border-bottom: solid 2px #28e;
+}
+
+
+.emailInput{
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 15px;
+
+    color: #fff;
+    font-size: 1.2em;
+    
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.inputLabel{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    
+    border-bottom:  2px solid #fff;
+    pointer-events: none;
+}
+
+.lavelContent{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    font-size: 1.2em;
+    transition: 
+        transform 0.6s ease, 
+        font-size 0.6s ease,  
+        color 0.6s ease ;
+}
+
+.inputLabel::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 100%;
+    width: 100%;
+
+    border-bottom:  2px solid #28e;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.emailInput:focus + .inputLabel .lavelContent,
+.emailInput:valid + .inputLabel .lavelContent{
+    color: #28e8;
+    transform: translateY(-150%);
+    font-size: smaller;
+}
+.emailInput:focus + .inputLabel::after,
+.emailInput:valid + .inputLabel::after{
+    transform: translateX(0%);
+}
+
+
+.formBtnArea{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.formBtnArea .emailBtn{
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.formArea .emailSubmit{
+    background: #28e;
+    color: #fff;
+    border: none;
+    transition: all 0.6s ease;
+}
+.formArea .emailSubmit:hover{
+    background: #28e8;
+}
+.formArea .emailSubmit:active{
+    font-size: 0.8em;
+}
+
+.formArea .emailReset{
+    background: #ccc;
+    border: none;
+}
+
+.hiddenCheck{
+    display: none;
+}
+.hiddenCheck + label{
+    transition: transform 0.6s ease, color 0.6s ease;
+}
+.hiddenCheck:checked + label{
+    transform: rotate(-20deg);
+    color: #28e;
+}
+
+
+@media screen and (max-width: 767px){
+    .contactContainer{
+        display: grid;
+        justify-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .iconArea{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .iconArea .emialIcon{
+        font-size: 8em;
+    }
+    /* .iconArea .emialIcon:hover{
+        transform: rotate(-20deg);
+        color: #28e;
+    } */
+
+    .formArea{
+        width: 80%;
+    }
+
+
+    
+}

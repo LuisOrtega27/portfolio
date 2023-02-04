@@ -1,0 +1,9 @@
+.projectSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: rgb(20, 45, 66);
+    height: 100hv;
+}
+
