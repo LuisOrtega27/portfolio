@@ -53,19 +53,59 @@
 
 
 
-.skillNameBg{
+.skillContainer{
     display: flex;
     margin: auto;
     
     height: 90%;
     width: 90%;
 
-    background: #151922;
+    background: var(--mainLight);
     border-radius: 50%;
     
     z-index: 5;
 }
+.skillCheckbox{
+    display: none;
+}
+
+.skillCheckbox:checked + .skillTooltip{
+    opacity: 0;
+    /* animation: fadeIn 0.6s ease; */
+}
+
+.skillTooltip{
+    display: flex;
+    position: absolute;
+    background: #000;
+    width: 90%;
+    height: 90%;
+    border-radius: 500%;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.skillTooltip span{
+    margin: auto;
+}
+
+.skillLabel{
+    display: flex;
+}
 
 .skillIcon{
+    width: 60%;
     margin: auto;
+}
+
+
+@keyframes fadeIn{
+    0%{
+        /* transform: translateY(-100%); */
+        opacity: 0;
+    }
+    100%{
+        /* transform: translateY(0); */
+        opacity: 1;
+    }
 }

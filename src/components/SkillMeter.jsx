@@ -30,12 +30,22 @@ const SkillMeter = ({skillToolTip, skillIcon, skillRate})=>{
             <div className="mid2" style={handleRate2()}></div>
 
             <div className="halfHidder"></div>
+            
+                <div className="skillContainer">
+                    
+                    <input type="checkbox" id={`${skillToolTip}Checkbox`} className={'skillCheckbox'}/>
 
-            <div className="skillNameBg">
-                <p className="skillIcon">
-                    {skillIcon}
-                </p>    
-            </div>
+                    <div className="skillTooltip">
+                        <span>
+                            {skillToolTip}
+                        </span>
+                    </div>
+                    
+                    <label htmlFor={`${skillToolTip}Checkbox`} className={'skillLabel'}>
+                        <img className="skillIcon" src={skillIcon} alt={skillIcon}/>
+                    </label>
+
+                </div>
 
         </div>
     )
