@@ -2,7 +2,7 @@
 .mainHeader{
     display: grid;
     grid-template-columns: 75px 75px 1fr 1fr;
-    background: #000;
+    /* background: #000; */
     padding-bottom: 20px;
 }
 .navSpacer{
@@ -14,35 +14,44 @@
 .myInfo{
     margin-bottom: 5px;
 }  
+.pictureFrame{
+    display: inline-block;
+    
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+
+.pictureFrame > img{
+    height: 100%;
+    width: 100%;
+}
 
 @media screen and (max-width: 767px){  
+    .mainHeader{
+        display: grid;
+        grid-template-columns: 75px 75px 1fr 1fr;
+        background: #000;
+        padding-bottom: 20px;
+    }
+
+    .pictureFrame{
+        border-radius: 50%;
+        border: solid 4px#28e;
     
+        height: 120px;
+        width: 120px;
+        
+    }
     
     .photoContainer{
         display: flex;
         grid-column: 1/3;
     }
     
-    .pictureFrame{
-        display: inline-block;
-
-        margin: auto;
-        margin-top: 50px;
-
-        height: 120px;
-        width: 120px;
-        
-        border: solid 4px#28e;
-        border-radius: 50%;
-        overflow: hidden;
-    }
-
-    .pictureFrame > img{
-        height: 100%;
-        width: 100%;
-    }
-
-
+    
+    
     .myInfoContainer{
         margin-top: 60px;
         grid-column: 3/5;
@@ -61,5 +70,11 @@
         text-align: justify;
         padding: 20px;
     }
+    
+}
 
+@media screen and (min-width: 1024px){
+    .mainHeader{
+        background: #ff8000;
+    }
 }

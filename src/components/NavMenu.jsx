@@ -39,8 +39,6 @@ const NavMenu = ()=>{
     return(
         <nav className={`mainNav`}>
             
-            <div className="mainMenuArea">
-            
                 <div className="spacer sp1">
                     <FontAwesomeIcon icon={faCode}/>
                 </div>
@@ -76,8 +74,6 @@ const NavMenu = ()=>{
 
                 </ul>
             
-            </div>
-
         </nav>
     )
 
