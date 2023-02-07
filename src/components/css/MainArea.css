@@ -6,19 +6,29 @@
 }
 section{
     padding-top: 20px;
+    
 }
-
+main{
+    scroll-padding-top: 100px;
+}
 .desc{
-    width: 80%;
     margin: auto;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 /*------------------------------------------*/
 
 
 @media screen and (min-width:767px){
-    /* section{
-        display: none;
-    } */
+    .desc{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .desc{
+        width: 100%;
+    }
 }

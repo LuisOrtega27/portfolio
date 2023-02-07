@@ -13,8 +13,11 @@
     background-origin: padding-box, padding-box;
 
     z-index: 1;
+    cursor: pointer;
 }
-
+.skillMeter *{
+    cursor: pointer;
+}
 
 
 .mid1{
@@ -38,6 +41,7 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(90deg, #4b749f 50%, transparent 50%);
+    
 }
 
 
@@ -48,6 +52,7 @@
     background: linear-gradient(90deg, #4b749f 50%, transparent 50%); /* para el medidor de skill: #222f3e*/
     
     z-index: 3;
+
 }
 
 

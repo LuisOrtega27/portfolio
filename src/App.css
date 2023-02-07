@@ -61,11 +61,11 @@ body{
 }
 
 
+.App{
+  background: var(--mainDark);
+}
 
 @media (max-width: 767px){
-  .App{
-    background: var(--mainDark);
-  }
 
 }
 

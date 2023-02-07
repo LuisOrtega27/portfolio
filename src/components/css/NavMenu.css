@@ -26,6 +26,8 @@
     color: #28e;
     padding: 5px 10px;
 
+    margin-top: 20px;
+
     background: none;
     border: solid 2px #28e;
     border-radius: 8px;
@@ -37,6 +39,7 @@
 .downloadCv:hover{
     color: #fff;
     border-color: #fff;
+    cursor: pointer;
 }
 .mainMenu li{
     overflow: hidden;
@@ -68,7 +71,7 @@
 }
 
 @media screen and ( max-width: 767px){ /* Movil */
-
+    
     .mainNav{
         display: grid;
         grid-template-columns: auto 1fr auto;

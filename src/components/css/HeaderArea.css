@@ -1,27 +1,10 @@
+:root{scroll-behavior: smooth;}
 
-.mainHeader{
-    display: grid;
-    grid-template-columns: 75px 75px 1fr 1fr;
-    /* background: #000; */
-    padding-bottom: 20px;
-}
-.navSpacer{
-    grid-column: 1/5;
-    height: 90px;
-}
-
-
-.myInfo{
-    margin-bottom: 5px;
-}  
 .pictureFrame{
     display: inline-block;
     
     margin: auto;
-    margin-top: 50px;
-    overflow: hidden;
 }
-
 
 .pictureFrame > img{
     height: 100%;
@@ -29,29 +12,41 @@
 }
 
 @media screen and (max-width: 767px){  
+    :root{scroll-padding-top: 55px;}
+    .navSpacer{
+        grid-column: 1/5;
+        height: 90px;
+    }
+    
     .mainHeader{
         display: grid;
         grid-template-columns: 75px 75px 1fr 1fr;
         background: #000;
         padding-bottom: 20px;
     }
-
+    
+    
+    .myInfo{
+        margin-bottom: 5px;
+    }  
+    
     .pictureFrame{
+        
         border-radius: 50%;
         border: solid 4px#28e;
-    
+        
         height: 120px;
         width: 120px;
         
+        margin-top: 50px;
+        overflow: hidden;
     }
     
     .photoContainer{
         display: flex;
         grid-column: 1/3;
     }
-    
-    
-    
+     
     .myInfoContainer{
         margin-top: 60px;
         grid-column: 3/5;
@@ -74,7 +69,59 @@
 }
 
 @media screen and (min-width: 1024px){
+    :root{scroll-padding-top: 38px;}
+    .navSpacer{
+        height: 38px;
+        grid-column: 1/-1;
+        margin-bottom: 100px;
+    }
+
     .mainHeader{
-        background: #ff8000;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: #000;
+    }
+
+
+    .photoContainer{
+        text-align: end;
+        padding-right: 100px;
+    }
+    
+    .pictureFrame{  
+        width: 200px;
+        margin: auto;
+        
+        background: #28e;
+    }
+    .pictureFrame img{
+        transform: translate(25px, -25px);
+        border: solid 2px var(--mainDark);
+        box-shadow: -10px 15px 10px #0008;
+    }
+
+    .myInfoContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .myInfoContainer .myName{
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .speechContainer{
+        text-align: end;
+        width: 60%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        grid-column: 1/-1;
+    }
+    .mySpeech{
+        text-align: left;
     }
 }

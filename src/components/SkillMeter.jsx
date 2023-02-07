@@ -24,8 +24,7 @@ const SkillMeter = ({skillToolTip, skillIcon, skillRate})=>{
     return(
         <div className={'skillMeter'} >
 
-            <div className="mid1" style={
-                handleRate1()}></div>
+            <div className="mid1" style={handleRate1()}></div>
             
             <div className="mid2" style={handleRate2()}></div>
 
