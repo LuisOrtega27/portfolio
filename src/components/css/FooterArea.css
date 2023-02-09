@@ -1,6 +1,7 @@
 footer{
-    padding: 20px;
+    padding: 40px;
     background: var(--thirdDark);
+    text-align: center;
 }
 .iconsArea{
     display: flex;
@@ -14,7 +15,15 @@ footer{
     padding: 10px;
     border: solid var(--mainLight);
     border-radius: 50%;
+    transition: border 0.3s ease;
 }
 .icon{
     fill: #fff;
+    transition: fill 0.3s ease;
+}
+.iconContainer:hover{
+    border: solid var(--primaryActive);
+}
+.iconContainer:hover .icon{
+    fill: var(--primaryActive);
 }

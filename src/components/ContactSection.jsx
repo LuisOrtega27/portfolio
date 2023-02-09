@@ -25,7 +25,7 @@ const ContactSection = () => {
                         <form action="#">
                             
                             <div className='inputGroup'>
-                                <input type="text" id="emailBusiness" className='emailInput' required/>
+                                <input type="text" id="emailBusiness" className='emailInput' required autoComplete='off'/>
                                 <label htmlFor="emailBusiness" className='inputLabel'>
                                     <span className='lavelContent'>Titulo</span>
                                 </label>

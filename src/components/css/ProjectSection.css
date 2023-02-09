@@ -1,7 +1,7 @@
 .projectSection{
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 40px;
     padding: 20px;
     background: rgb(20, 45, 66);
