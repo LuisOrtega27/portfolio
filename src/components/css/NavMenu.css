@@ -30,10 +30,10 @@
 
     background: none;
     border: solid 2px #28e;
-    border-radius: 8px;
+    border-radius: 0px;
     transition: 
-        color 0.6 ease, 
-        border-color 0.6 ease,
+        color 0.6s ease, 
+        border 0.6s ease
     ;
 }
 .downloadCv:hover{
@@ -140,7 +140,7 @@
         font-weight: 600;
         padding: 10px 50px;
         border: solid 4px #28e;
-        border-radius: 15px;
+        border-radius: 0px;
         margin-top: 10px;
     }
 
