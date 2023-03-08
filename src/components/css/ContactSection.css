@@ -166,6 +166,14 @@
     color: #28e;
 }
 
+.email-ready{
+    transition: transform 0.6s ease, color 0.6s ease;
+
+    transform: rotate(-20deg);
+    color: #28e;
+}
+
+
 .iconArea{
     display: flex;
     justify-content: center;
@@ -187,7 +195,7 @@
     
 }
 
-@media screen and (min-width: 1024px){ /* Version for Desktop */
+@media screen and (min-width: 768px){ /* Version for Desktop */
     .formArea{
         width: 60%;
     }

@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const ContactSection = () => {
 
+
+let defaultInputs = {emailBusiness:'', emailMessage: ''}
+
+
+
+const ContactSection = () => {
+    
     let emailMask= 'a1ca623b-9c37-408a-a4c9-ad00ec5cf03c'
+
+    const [inputs, setInputs] = useState(defaultInputs)
+
+    const handleChange = (e)=>{
+        let value = e.target.value
+        setInputs({...inputs, [e.target.id]: value})    
+    }
+
+    
 
     return ( 
         <section className="contactSection" id="contactSection">
@@ -17,7 +32,7 @@ const ContactSection = () => {
                 <div className="iconArea" id="iconArea">
                     <input type='checkbox' className='hiddenCheck' id='emailIconCheck'/>
                     <label htmlFor='emailIconCheck'>  
-                        <FontAwesomeIcon icon={faEnvelope} className={'emialIcon'}/>
+                        <FontAwesomeIcon icon={faEnvelope} className={`emialIcon`}/>
                     </label>
                 </div>
 
@@ -26,7 +41,7 @@ const ContactSection = () => {
                     <form id='contactform' action={`https://formsubmit.io/send/${emailMask}`} method='POST'>
                                     
                         <div className='inputGroup'>
-                            <input type="text" id="emailBusiness" className='emailInput' autoComplete='off' name='emailBusiness' required/>
+                            <input type="text" id="emailBusiness" className='emailInput' autoComplete='off' name='emailBusiness' required onChange={handleChange}/>
                             <label htmlFor="emailBusiness" className='inputLabel'>
                                 <span className='lavelContent'>Titulo</span>
                             </label>
@@ -34,7 +49,7 @@ const ContactSection = () => {
 
 
                         <div className='textAreaGroup'>
-                            <textarea id="emailMessage" placeholder='Comentario' name='emailMessage' required/>
+                            <textarea id="emailMessage" placeholder='Comentario' name='emailMessage' required onChange={handleChange}/>
                             <div className='bg-border'></div>
                             <label htmlFor="emailMessage" className='lavelContent'>
                                 <span className='lavelContent'>Mensaje</span>

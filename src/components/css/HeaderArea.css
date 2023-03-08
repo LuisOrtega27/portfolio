@@ -68,7 +68,7 @@
     
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
     :root{scroll-padding-top: 38px;}
     .navSpacer{
         height: 38px;

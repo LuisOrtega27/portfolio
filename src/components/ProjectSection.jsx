@@ -1,8 +1,19 @@
-import React from 'react';
-
-import ProjectViewer from './ProjectViewer'
+import React, { useEffect, useState } from 'react';
+import ProyectViewer from './ProjectViewer';
 
 const ProjectSection = () => {
+
+    const [list, setList] = useState([])
+
+    useEffect(()=>{
+        
+        fetch("./assets/proyect_list.json")
+        .then(res=>res.json())
+        .then(res=> {
+            setList(res.proyects)
+        })
+
+    },[])
 
     return ( 
         <section className="projectSection" id="projectSection">
@@ -11,36 +22,17 @@ const ProjectSection = () => {
                 
                 <p className="desc">Proyectos interezantes que he desarrollado, esta lista se ira actualizando</p>
 
-                    <ProjectViewer 
-                        thumbnail={'./imgs/Mistborn-icon.jpg'}
-                        description={'lo que sea mucho texto'}
-                        path={'https://luisortega27.github.io/wordle-counterfeit.github.io/'}
-                        title={'Wordle counterfeit'}
-                    />
-                    <ProjectViewer 
-                        thumbnail={'./imgs/Mistborn-icon.jpg'}
-                        description={'lo que sea mucho texto'}
-                        path={'https://luisortega27.github.io/wordle-counterfeit.github.io/'}
-                        title={'Wordle counterfeit'}
-                    />
-                    <ProjectViewer 
-                        thumbnail={'./imgs/Mistborn-icon.jpg'}
-                        description={'lo que sea mucho texto'}
-                        path={'https://luisortega27.github.io/wordle-counterfeit.github.io/'}
-                        title={'Wordle counterfeit'}
-                    />
-                    <ProjectViewer 
-                        thumbnail={'./imgs/Mistborn-icon.jpg'}
-                        description={'lo que sea mucho texto'}
-                        path={'https://luisortega27.github.io/wordle-counterfeit.github.io/'}
-                        title={'Wordle counterfeit'}
-                    />
-                    <ProjectViewer 
-                        thumbnail={'./imgs/Mistborn-icon.jpg'}
-                        description={'lo que sea mucho texto'}
-                        path={'https://luisortega27.github.io/wordle-counterfeit.github.io/'}
-                        title={'Wordle counterfeit'}
-                    />
+                    {
+                        list.map( (p, index) =>{
+                            return <ProyectViewer
+                                key={index} 
+                                thumbnail={p.thumbnail}
+                                description={p.description}
+                                path={p.path}
+                                title={p.title}
+                            />
+                        })
+                    }
 
             </section>
      );

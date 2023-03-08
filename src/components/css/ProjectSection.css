@@ -1,7 +1,7 @@
 .projectSection{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 40px;
     padding: 20px;
     background: rgb(20, 45, 66);
@@ -13,7 +13,7 @@
         justify-content: space-evenly;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
     .projectSection{
         padding: 40px 100px;
     }
