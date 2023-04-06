@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocationDot, faEnvelope, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import LangContext from "../context/LangContext";
 
 
-const HeaderArea = ({NavMenu})=>{
+
+const HeaderArea = ({NavMenu, theme})=>{
+
+    const {texts} = useContext(LangContext)
+
+    const {mySpeech, downloadCv} = texts.headerArea.myInfo
+    
     
     return(
-        <header className="mainHeader" id="mainHeader">
+        <header className={`mainHeader ${theme}`} id="mainHeader">
 
             {/* Menu de navegacion */}
             {NavMenu}
@@ -16,6 +23,7 @@ const HeaderArea = ({NavMenu})=>{
             {/* 
                 Espacio para respetar 
                 la posicion del menu 
+                
             */}
             <div className="navSpacer"></div>
             {/* ---------------------------------------- */}
@@ -49,10 +57,10 @@ const HeaderArea = ({NavMenu})=>{
             
             <div className="speechContainer">
             
-                <p className="mySpeech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quibusdam repellat dolores sed, architecto cumque vitae, molestias consequuntur nulla porro quia odit molestiae facilis numquam eveniet iusto impedit? Quasi, provident!</p>
+                <p className="mySpeech">{mySpeech}</p>
                 
                 <button className="downloadCv">
-                    Curriculum
+                    {downloadCv}
                     <FontAwesomeIcon className="icon-right" icon={faFileArrowDown}/> 
                     
                 </button>

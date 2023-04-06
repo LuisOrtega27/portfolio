@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import LangContext from "../context/LangContext";
 
 const FooterArea = ()=>{
+
+    const {texts} = useContext(LangContext)
+
+    const {footerText} = texts.footerArea
     
     return(
 
         <footer>
 
-            <p>Tambien puedes contactarme traves de mis redes sociales</p>
+            <p>{footerText}</p>
 
             <br/>
             

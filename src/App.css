@@ -4,6 +4,7 @@
 @import url('./components/css/NavMenu.css');
 
 @import url('./components/css/MainArea.css');
+@import url('./components/css/MySection.css');
 @import url('./components/css/SkillSection.css');
 @import url('./components/css/ProjectSection.css');
 @import url('./components/css/ContactSection.css');
@@ -12,6 +13,8 @@
 @import url('./components/css/ProjectViewer.css');
 
 @import url('./components/css/FooterArea.css');
+
+@import url('./components/css/DarkMode.css');
 
 /* 
   Móvil: 360 x 640
@@ -49,7 +52,6 @@
 body{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
   scroll-behavior: smooth;
 }
 
@@ -62,10 +64,5 @@ body{
 
 
 .App{
-  background: var(--mainDark);
+  background: var(--main);
 }
-
-@media (max-width: 767px){
-
-}
-

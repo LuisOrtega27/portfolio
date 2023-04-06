@@ -1,0 +1,26 @@
+
+.my-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.section-title, .section-desc{
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:767px){ /* movil */
+    .desc{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 768px){ /* desctop */
+    .desc{
+        width: 100%;
+    }
+}

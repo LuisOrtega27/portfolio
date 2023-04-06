@@ -1,20 +1,19 @@
-.projectSection{
+
+.projectsContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     padding: 20px;
-    background: rgb(20, 45, 66);
-    height: 100hv;
 }
 
 @media screen and (max-width: 737px){
-    .projectSection{
+    .projectsContainer{
         justify-content: space-evenly;
     }
 }
 @media screen and (min-width: 768px){
-    .projectSection{
+    /* .projectsContainer{
         padding: 40px 100px;
-    }
+    } */
 }

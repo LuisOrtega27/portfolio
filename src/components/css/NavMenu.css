@@ -6,9 +6,16 @@
     left: 0;
     
     width: 100%;
-    background: #0a101d;
+    background: var(--third);
     z-index: 1000000;
+
+    box-shadow: 0px 0px 20px var(--third);
 }
+
+.sp1 i{
+    color: #fff;
+}
+
 
 .mainMenu ul{
     display: grid;
@@ -23,13 +30,13 @@
 }
 
 .downloadCv{ 
-    color: #28e;
+    color: var(--active);
     padding: 5px 10px;
 
     margin-top: 20px;
 
     background: none;
-    border: solid 2px #28e;
+    border: solid 2px var(--active);
     border-radius: 0px;
     transition: 
         color 0.6s ease, 
@@ -41,6 +48,7 @@
     border-color: #fff;
     cursor: pointer;
 }
+
 .mainMenu li{
     overflow: hidden;
 }
@@ -67,8 +75,15 @@
 }
 .mainMenu li a:hover::after{
     transform: translateX(0%);
-
 }
+
+.confi-options{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+
+
 
 @media screen and ( max-width: 767px){ /* Movil */
     
@@ -93,7 +108,6 @@
         display: flex;
         margin: auto;
         font-size: 1.6em;
-        color: #222f3e;
     }
     
     .mainMenu{
@@ -140,6 +154,7 @@
         font-weight: 600;
         padding: 10px 50px;
         border: solid 4px #28e;
+        color: #28e;
         border-radius: 0px;
         margin-top: 10px;
     }

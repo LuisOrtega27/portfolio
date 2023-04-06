@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,14 +13,25 @@ import {
     faDiagramProject, 
     faAddressBook
 } from "@fortawesome/free-solid-svg-icons";
+import Darkmode from "./Darkmode";
+import LangInput from "./LangInput";
+import LangContext from "../context/LangContext";
 
 
-const NavMenu = ()=>{
+
+
+
+const NavMenu = ({handleTheme, handleLang})=>{
 
     const [menuOpen, setMenuOpen]  = useState(false)
     const [icon, setIcon] = useState(faBars)
-    
     const [menuStyle, setMenuStyle] = useState('mainNavClose')
+
+
+    const {texts} = useContext(LangContext)
+
+    const {links} = texts.headerArea.navMenu
+
 
     //--------- funcion para habrir y cerrar el menu --------------------------------------
     const handleMenuOpen = ()=>{    
@@ -35,41 +46,58 @@ const NavMenu = ()=>{
         setMenuOpen(!menuOpen)
     }
     //-----------------------------------------------
+    
+
+
 
     return(
         <nav className={`mainNav`}>
             
                 <div className="spacer sp1">
-                    <FontAwesomeIcon icon={faCode}/>
+                    <i>
+                        <FontAwesomeIcon icon={faCode}/>
+                    </i>
                 </div>
 
                 <div className="spacer sp2"></div>
+
+
 
                 <button id="menuBtn" onClick={handleMenuOpen}>
                     <FontAwesomeIcon icon={ icon }/>
                 </button>
 
+
+
                 <ul className={`mainMenu ${menuStyle}`} onClick={handleMenuOpen}>
                     
+
+
+                    <div className="confi-options">
+                        <LangInput />
+                        <Darkmode handleTheme={handleTheme}/>
+                    </div>
+
+
+
                     <li><a href="#mainHeader">
-                        inicio <FontAwesomeIcon className="icon-right" icon={faHouse}/>
+                        {links.home} <FontAwesomeIcon className="icon-right" icon={faHouse}/>
                     </a></li>
 
                     <li><a href="#skillSection">
-                        habilidades <FontAwesomeIcon className="icon-right" icon={faBolt}/>
+                        {links.skills} <FontAwesomeIcon className="icon-right" icon={faBolt}/>
                     </a></li>
                     
                     <li><a href="#projectSection">
-                        proyectos <FontAwesomeIcon className="icon-right" icon={faDiagramProject}/>
+                        {links.projects} <FontAwesomeIcon className="icon-right" icon={faDiagramProject}/>
                     </a></li>
                     
                     <li><a href="#contactSection">
-                        contacto <FontAwesomeIcon className="icon-right" icon={faAddressBook}/>
+                        {links.contact} <FontAwesomeIcon className="icon-right" icon={faAddressBook}/>
                     </a></li>
 
                     <li className="cvContainer"><button className="downloadCv">
-                            Curriculum  
-                            <FontAwesomeIcon className="icon-right" icon={faFileArrowDown}/>
+                        {links.downloadCv} <FontAwesomeIcon className="icon-right" icon={faFileArrowDown}/>
                     </button></li>
 
                 </ul>

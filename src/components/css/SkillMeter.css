@@ -9,9 +9,9 @@
     
     border-radius: 50%;
     overflow: hidden;
-    background: #4b749f; /*para la medicion del skill: #222f3e*/
+    background: var(--active); /*para la medicion del skill: #222f3e*/
     background-origin: padding-box, padding-box;
-
+    
     z-index: 1;
     cursor: pointer;
 }
@@ -40,8 +40,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #4b749f 50%, transparent 50%);
-    
+    /* medidor de skill*/
+    /* background: linear-gradient(90deg, var(--active) 50%, transparent 50%); */
 }
 
 
@@ -49,7 +49,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #4b749f 50%, transparent 50%); /* para el medidor de skill: #222f3e*/
+    /* medidor de skill*/
+    /* background: linear-gradient(90deg, var(--active) 50%, transparent 50%);  */
     
     z-index: 3;
 
@@ -91,11 +92,14 @@
     transition: opacity 0.3s ease;
 }
 .skillTooltip span{
+    color: #fff;
     margin: auto;
 }
 
 .skillLabel{
     display: flex;
+    background: #fff;
+    border-radius: 100px;
 }
 
 .skillIcon{

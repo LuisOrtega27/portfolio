@@ -1,10 +1,27 @@
 :root{
-    --primaryActive: #28e;
-    --secondActive: #738aa1;
+    --active: rgb(20, 45, 66);
 
-    --mainLight: #ffffff;
+    --main: #7286D3;
+    --second: #8EA7E9;
     
-    --mainDark: #151922;
-    --secondDark: #222f3e;
-    --thirdDark: #0a101d;
+    --text: #000;
+    
+    --third: #0a101d;
+}
+
+.light-theme{
+    --active: rgb(20, 45, 66);
+
+    --main: #7286D3;
+    --second: #8EA7E9;
+    
+    --text: #000;
+}
+
+.dark-theme{
+    --active: #28e;
+
+    --main: #151922;
+    
+    --text: #fff;
 }

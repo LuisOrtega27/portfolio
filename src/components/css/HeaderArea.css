@@ -1,8 +1,11 @@
 :root{scroll-behavior: smooth;}
 
+.mainHeader{
+    color: var(--text);
+}
+
 .pictureFrame{
-    display: inline-block;
-    
+    display: inline-block; 
     margin: auto;
 }
 
@@ -11,7 +14,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 767px){  
+@media screen and (max-width: 767px){  /* movil */
     :root{scroll-padding-top: 55px;}
     .navSpacer{
         grid-column: 1/5;
@@ -21,7 +24,6 @@
     .mainHeader{
         display: grid;
         grid-template-columns: 75px 75px 1fr 1fr;
-        background: #000;
         padding-bottom: 20px;
     }
     
@@ -33,7 +35,7 @@
     .pictureFrame{
         
         border-radius: 50%;
-        border: solid 4px#28e;
+        border: solid 4px var(--active);
         
         height: 120px;
         width: 120px;
@@ -79,7 +81,6 @@
     .mainHeader{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background: #000;
     }
 
 
@@ -89,10 +90,11 @@
     }
     
     .pictureFrame{  
-        width: 200px;
+        height: 200px;
+        width: 150px;
         margin: auto;
         
-        background: #28e;
+        background: var(--active);
     }
     .pictureFrame img{
         transform: translate(25px, -25px);

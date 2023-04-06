@@ -3,10 +3,10 @@
     justify-items: center;
     width: 100%;
     margin-bottom: 40px;
-    /* height: 100dvh; */
 }
-.contactSection h2{
-    margin-top: 40px;
+.sectionTitle {
+    color: var(--text);
+    /* margin-top: 40px; */
 }
 
 .formArea{
@@ -30,7 +30,7 @@
 
 #emailMessage{
     background: none;
-    color: #fff;
+    color: var(--text);
     width: 100%;
     height: 100%;
     font-size: 1.2em;
@@ -38,7 +38,7 @@
     resize: none;
     position: relative;
     z-index: 2;
-    background: var(--mainDark);
+    background: var(--third);
     padding: 5px;
     outline: none;
 }
@@ -59,9 +59,9 @@
     /* transform: translateX(-25%); */
 }
 #emailMessage:valid + .bg-border{
-    background: linear-gradient(240deg, transparent 20%, #28e);
+    background: linear-gradient(240deg, transparent 20%, var(--active));
     /* transform: translateX(0%); */
-    border-bottom: solid 2px #28e;
+    border-bottom: solid 2px var(--active);
 }
 
 .emailInput{
@@ -70,7 +70,7 @@
     padding-left: 5px;
     padding-top: 15px;
 
-    color: #fff;
+    color: var(--text);
     font-size: 1.2em;
     
     border: none;
@@ -94,6 +94,7 @@
     bottom: 4px;
     left: 0;
     font-size: 1.2em;
+    color: #fff;
     transition: 
         transform 0.6s ease, 
         font-size 0.6s ease,  
@@ -109,14 +110,14 @@
     height: 100%;
     width: 100%;
 
-    border-bottom:  2px solid #28e;
+    border-bottom:  2px solid var(--active);
     transform: translateX(-100%);
     transition: transform 0.6s ease;
 }
 
 .emailInput:focus + .inputLabel .lavelContent,
 .emailInput:valid + .inputLabel .lavelContent{
-    color: #28e8;
+    color: var(--active);
     transform: translateY(-150%);
     font-size: smaller;
 }
@@ -138,13 +139,13 @@
 }
 
 .formArea .emailSubmit{
-    background: #28e;
+    background: var(--active);
     color: #fff;
     border: none;
     transition: all 0.6s ease;
 }
 .formArea .emailSubmit:hover{
-    background: #28e8;
+    background: var(--active);
 }
 .formArea .emailSubmit:active{
     font-size: 0.8em;
@@ -159,18 +160,19 @@
     display: none;
 }
 .hiddenCheck + label{
+    color: var(--text);
     transition: transform 0.6s ease, color 0.6s ease;
 }
 .hiddenCheck:checked + label{
     transform: rotate(-20deg);
-    color: #28e;
+    color: var(--active) !important;
 }
 
 .email-ready{
     transition: transform 0.6s ease, color 0.6s ease;
 
     transform: rotate(-20deg);
-    color: #28e;
+    color: var(--active);
 }
 
 

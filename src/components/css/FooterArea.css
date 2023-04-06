@@ -1,8 +1,13 @@
 footer{
     padding: 40px;
-    background: var(--thirdDark);
+    background: var(--third);
     text-align: center;
 }
+
+footer p{
+    color: #fff;
+} 
+
 .iconsArea{
     display: flex;
     flex-wrap: wrap;
@@ -13,17 +18,19 @@ footer{
     width: 40px;
     height: 40px;
     padding: 10px;
-    border: solid var(--mainLight);
+    border: solid var(--active);
     border-radius: 50%;
     transition: border 0.3s ease;
 }
 .icon{
     fill: #fff;
-    transition: fill 0.3s ease;
+    transition: fill 0.3s ease, transform 0.3s ease;
+
 }
 .iconContainer:hover{
-    border: solid var(--primaryActive);
+    border: solid transparent;
 }
 .iconContainer:hover .icon{
-    fill: var(--primaryActive);
+    fill: #fff;
+    transform:  scale(1.5);
 }

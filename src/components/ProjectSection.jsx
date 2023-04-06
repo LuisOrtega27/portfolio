@@ -16,25 +16,25 @@ const ProjectSection = () => {
     },[])
 
     return ( 
-        <section className="projectSection" id="projectSection">
+        <>
 
-                <h2 className="sectionTitle">Proyects</h2>
-                
-                <p className="desc">Proyectos interezantes que he desarrollado, esta lista se ira actualizando</p>
+            <div className='projectsContainer'>
 
-                    {
-                        list.map( (p, index) =>{
-                            return <ProyectViewer
-                                key={index} 
-                                thumbnail={p.thumbnail}
-                                description={p.description}
-                                path={p.path}
-                                title={p.title}
-                            />
-                        })
-                    }
+                {
+                    list.map( (p, index) =>{
+                        return <ProyectViewer
+                            key={index} 
+                            thumbnail={p.thumbnail}
+                            description={p.description}
+                            path={p.path}
+                            title={p.title}
+                        />
+                    })
+                }
 
-            </section>
+            </div>
+
+        </>
      );
 }
  
