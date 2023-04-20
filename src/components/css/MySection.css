@@ -11,16 +11,25 @@
     color: var(--text);
     margin-bottom: 40px;
 }
+.section-desc{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+}
 
-@media screen and (min-width:767px){ /* movil */
-    .desc{
-        width: 80%;
+@media screen and (min-width:767px){ 
+    .section-desc{
+        width: 60%;
     }
+    
 }
 
 
-@media screen and (min-width: 768px){ /* desctop */
+/* desctop 
+@media screen and (min-width: 768px){ 
     .desc{
         width: 100%;
     }
-}
+} 
+*/

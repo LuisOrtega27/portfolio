@@ -18,15 +18,16 @@ import LangInput from "./LangInput";
 import LangContext from "../context/LangContext";
 
 
+import showCv from '../helpers/helpShowCv'
 
 
-
-const NavMenu = ({handleTheme, handleLang})=>{
+const NavMenu = ({handleTheme})=>{
 
     const [menuOpen, setMenuOpen]  = useState(false)
     const [icon, setIcon] = useState(faBars)
     const [menuStyle, setMenuStyle] = useState('mainNavClose')
 
+    const [menuScroll, setMenuScroll] = useState(0)
 
     const {texts} = useContext(LangContext)
 
@@ -46,12 +47,28 @@ const NavMenu = ({handleTheme, handleLang})=>{
         setMenuOpen(!menuOpen)
     }
     //-----------------------------------------------
+
+
+
+    //--------- controlar cuando el menu se oculta al hacer escroll --------------------------------------
+    let prevScroll = window.scrollY
     
+    window.addEventListener('scroll', ()=>{
+        let currentScroll = window.scrollY
+        if(currentScroll > prevScroll){
+            setMenuScroll(-60)
+        }else{
+            setMenuScroll(0)
+        }
+        prevScroll = currentScroll
+    })
+    //-----------------------------------------------
 
 
 
+    
     return(
-        <nav className={`mainNav`}>
+        <nav className={`mainNav`} style={{top: menuScroll}}>
             
                 <div className="spacer sp1">
                     <i>
@@ -96,7 +113,7 @@ const NavMenu = ({handleTheme, handleLang})=>{
                         {links.contact} <FontAwesomeIcon className="icon-right" icon={faAddressBook}/>
                     </a></li>
 
-                    <li className="cvContainer"><button className="downloadCv">
+                    <li className="cvContainer"><button className="downloadCv" onClick={showCv}>
                         {links.downloadCv} <FontAwesomeIcon className="icon-right" icon={faFileArrowDown}/>
                     </button></li>
 

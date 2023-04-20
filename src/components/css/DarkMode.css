@@ -4,7 +4,7 @@
     margin: 10px;
     margin-right: 100px;
     width: 40px;
-    border: solid 1px #fff;
+    border: solid 2px #fff;
     border-radius: 50px;
     background: var(--mainDark);
     transition: background 0.6s ease;
@@ -33,12 +33,23 @@
     position: absolute;
     left: 0;
     top: 0;
-    transform: translateX(60%);
+    width: 100px;
+    transform: translateX(45%);
     color: #fff;
     opacity: 0;
     transition: opacity 0.6s ease;
+    /* background: #ff8000; */
 }
 
 .darkmode-label:hover .pseudo-label{
     opacity: 1;
+}
+
+
+
+@media screen and ( max-width: 767px){ /* Movil */
+    .darkmode-label{
+        margin: 10;
+    }
+
 }

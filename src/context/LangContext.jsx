@@ -27,7 +27,7 @@ let translations = {
                 }
             },
             myInfo:{
-                mySpeech: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quibusdam repellat dolores sed, architecto cumque vitae, molestias consequuntur nulla porro quia odit molestiae facilis numquam eveniet iusto impedit? Quasi, provident!',
+                mySpeech: 'soy una persona proactiva, confiable, me gusta trabajar en equipo y aprender de diferentes puntos de vista. estoy acostumbrado a trabajar por objetivos orientados a generar resultados, con exelente gestion de tiempos.',
                 downloadCv: 'descargar CV'
             }
         },
@@ -77,7 +77,7 @@ let translations = {
                 }
             },
             myInfo:{
-                mySpeech: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quibusdam repellat dolores sed, architecto cumque vitae, molestias consequuntur nulla porro quia odit molestiae facilis numquam eveniet iusto impedit? Quasi, provident!',
+                mySpeech: 'I am a proactive, reliable person, I like to work in a team and learn from different points of view. I am used to working for objectives oriented to generate results, with excellent time management.',
                 downloadCv: 'download CV'
             }
         },

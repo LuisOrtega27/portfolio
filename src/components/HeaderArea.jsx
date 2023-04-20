@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocationDot, faEnvelope, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import LangContext from "../context/LangContext";
 
+import showCv from '../helpers/helpShowCv'
 
 
 const HeaderArea = ({NavMenu, theme})=>{
@@ -12,7 +13,9 @@ const HeaderArea = ({NavMenu, theme})=>{
     const {texts} = useContext(LangContext)
 
     const {mySpeech, downloadCv} = texts.headerArea.myInfo
-    
+
+
+
     
     return(
         <header className={`mainHeader ${theme}`} id="mainHeader">
@@ -30,7 +33,7 @@ const HeaderArea = ({NavMenu, theme})=>{
             
             <div className="photoContainer">
                 <picture className="pictureFrame">
-                    <img src="./imgs/Mistborn-icon.jpg" alt="Mistborn"/>
+                    <img src="./imgs/myPicture.jpg" alt="Mistborn"/>
                 </picture>
             </div>
 
@@ -59,9 +62,9 @@ const HeaderArea = ({NavMenu, theme})=>{
             
                 <p className="mySpeech">{mySpeech}</p>
                 
-                <button className="downloadCv">
+                <button className="downloadCv" onClick={showCv}>
                     {downloadCv}
-                    <FontAwesomeIcon className="icon-right" icon={faFileArrowDown}/> 
+                    <FontAwesomeIcon className="icon-right" icon={faFileArrowDown} /> 
                     
                 </button>
 

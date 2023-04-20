@@ -52,7 +52,7 @@ const ContactSection = () => {
 
 
                     <div className='textAreaGroup'>
-                        <textarea id="emailMessage" placeholder='Comentario' name='emailMessage' required onChange={handleChange}/>
+                        <textarea id="emailMessage" placeholder={message} name='emailMessage' required onChange={handleChange}/>
                         <div className='bg-border'></div>
                         <label htmlFor="emailMessage" className='lavelContent'>
                             <span className='lavelContent'>{message}</span>

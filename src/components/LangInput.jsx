@@ -9,7 +9,7 @@ const LangInput = ()=>{
 
     return(
         <>
-            <select name="lang" id="lang" value={lang} onChange={handleLang}>
+            <select name="lang" id="lang-input" value={lang} onChange={handleLang}>
                 <option value="none">-- {legend} --</option>
                 <option value="es">{languages.spanish}</option>
                 <option value="en">{languages.english}</option>
