@@ -1,0 +1,40 @@
+{
+    "proyects": [
+        {
+            "path": "https://luisortega27.github.io/wordle-counterfeit/",
+            "title": "wordle counterfeit",
+            "thumbnail": "./assets/thumbnails/thumbnail-wordle_counterfeit.png",
+            "description": "Es una copia del juego wordle hecha con el unico proposito de practicar."
+        },
+        {
+            "path": "https://luisortega27.github.io/weather-app/",
+            "title": "weather app",
+            "thumbnail": "./assets/thumbnails/thumbnail-weather_app.png",
+            "description": "Una aplicacion que muestra las condiciones climaticas del pais buscado."
+        },
+        {
+            "path": "https://luisortega27.github.io/rain-background/",
+            "title": "rain background",
+            "thumbnail": "./assets/thumbnails/thumbnail-rain_background.png",
+            "description": "Efecto de lluvia en el fondo de la pagina hecha unicamente animacion de css."
+        },
+        {
+            "path": "https://luisortega27.github.io/encryption-cease/",
+            "title": "encryption cease",
+            "thumbnail": "./assets/thumbnails/thumbnail-encryption_cease.png",
+            "description": "Encriptacion cesar"
+        },
+        {
+            "path": "https://luisortega27.github.io/3d-effects/",
+            "title": "3D effects",
+            "thumbnail": "./assets/thumbnails/thumbnail-3d_effects.png",
+            "description": "Efectos 3D"
+        },
+        {
+            "path": "https://luisortega27.github.io/to-do-list/",
+            "title": "to  do list",
+            "thumbnail": "./assets/thumbnails/thumbnail-to_do_list.png",
+            "description": "Lista de tareas por hacer."
+        }
+    ]
+}
