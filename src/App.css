@@ -67,5 +67,6 @@ body{
 
 
 .App{
-  background: var(--main);
+  background: var(--mainBackground);
+  transition: background 0.6s ease;
 }

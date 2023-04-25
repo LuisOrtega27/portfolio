@@ -16,6 +16,9 @@
     --second: #8EA7E9;
     
     --text: #000;
+
+
+    --mainBackground: #abb6d7;
 }
 
 .dark-theme{
@@ -24,4 +27,7 @@
     --main: #151922;
     
     --text: #fff;
+
+    --mainBackground: #151922;
+
 }

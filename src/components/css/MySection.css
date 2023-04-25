@@ -10,7 +10,14 @@
     text-align: center;
     color: var(--text);
     margin-bottom: 40px;
+    text-transform: capitalize;
 }
+
+.section-title{
+    font-size: 2em;
+
+}
+
 .section-desc{
     margin: 0 auto;
     margin-bottom: 40px;

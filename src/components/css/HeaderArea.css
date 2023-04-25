@@ -2,6 +2,7 @@
 
 .mainHeader{
     color: var(--text);
+    min-height: 100vh;
 }
 
 .pictureFrame{
@@ -70,7 +71,7 @@
     
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){ /* Descktop */
     :root{scroll-padding-top: 38px;}
     .navSpacer{
         height: 38px;
