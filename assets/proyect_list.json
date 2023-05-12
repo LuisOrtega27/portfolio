@@ -7,6 +7,30 @@
             "description": "Es una copia del juego wordle hecha con el unico proposito de practicar."
         },
         {
+            "path": "https://luisortega27.github.io/tic-tac-toe/",
+            "title": "tic tac toe",
+            "thumbnail": "./assets/thumbnails/thumbnail-tic_tac_toe.png",
+            "description": "El clasico juego de 3 en raya."
+        },
+        {
+            "path": "https://luisortega27.github.io/calculator/",
+            "title": "calculator",
+            "thumbnail": "./assets/thumbnails/thumbnail-calculator.png",
+            "description": "Pues eso, una calculadora."
+        },
+        {
+            "path": "https://luisortega27.github.io/QR-code-component/",
+            "title": "QR code component",
+            "thumbnail": "./assets/thumbnails/thumbnail-qr_code_component.png",
+            "description": "Componente para mostrar un codigo QR."
+        },
+        {
+            "path": "https://luisortega27.github.io/age-calculator-app/",
+            "title": "age calculator app",
+            "thumbnail": "./assets/thumbnails/thumbnail-age_calculator_app.png",
+            "description": "Aplicacion para calcular la edad o tiempo transcurrido."
+        },
+        {
             "path": "https://luisortega27.github.io/weather-app/",
             "title": "weather app",
             "thumbnail": "./assets/thumbnails/thumbnail-weather_app.png",
