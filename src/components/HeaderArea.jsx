@@ -33,7 +33,7 @@ const HeaderArea = ({NavMenu, theme})=>{
             
             <div className="photoContainer">
                 <picture className="pictureFrame">
-                    <img src="./imgs/myPicture1.jpg" alt="Mistborn"/>
+                    <img src="./imgs/myPicture.jpg" alt="Mistborn"/>
                 </picture>
             </div>
 
