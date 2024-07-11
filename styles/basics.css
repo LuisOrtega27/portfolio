@@ -1,0 +1,42 @@
+@import url(./mainMenu.css);
+@import url(./mainInfo.css);
+
+:root {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: #fff;
+
+  --main-bg-color: rgb(20, 20, 20);
+  --sec-bg-color: rgb(50, 50, 55);
+  --third-bg-color: rgb(60, 60, 65);
+
+  --main-active-color: rgb(128, 33, 208);
+  --sec-active-color: rgb(51, 28, 82);
+
+  --text-color-passive: rgb(145,145,145);
+  --text-color-active: rgb(255,255,255);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  background-color: var(--main-bg-color);
+}
+
+#app{
+  width: 50%;
+  min-height: 100%;
+  margin: auto;
+  background-color: var(--sec-bg-color);
+  border: solid 2px var(--sec-active-color);
+}
+
+

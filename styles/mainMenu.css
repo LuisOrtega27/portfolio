@@ -1,0 +1,39 @@
+.main-menu{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    /* background-color: aqua; */
+  }
+  .devIcon{
+    display: inline-block;
+    padding: 10px;
+  }
+  .devIcon>svg{
+    fill: var(--text-color-active);;
+  }
+
+
+  .main-menu > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .main-menu > ul > li{
+    flex-basis: 150px;
+    list-style: none;
+  }
+  .main-menu > ul > li> a{
+    display: inline-block;
+    padding: 10px 25px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color-passive);
+    transition: color 0.3s ease;
+  }
+  .main-menu > ul > li> a:hover{
+    color: var(--text-color-active);
+  }
+  
