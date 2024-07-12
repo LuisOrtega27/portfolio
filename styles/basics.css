@@ -1,5 +1,7 @@
 @import url(./mainMenu.css);
 @import url(./mainInfo.css);
+@import url(./about.css);
+@import url(./skills.css);
 
 :root {
   font-size: 16px;
@@ -39,4 +41,22 @@ body{
   border: solid 2px var(--sec-active-color);
 }
 
+.content-section{
+  padding: 10%;
+}
 
+.section-title{
+  position: relative;
+  font-family: 'Times New Roman';
+  font-size: 2.5em;
+}
+.section-title-figure{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: inline-block;
+  width: 2em;
+  height: 0.1em;
+  background: var(--main-active-color);
+  transform: translateX(-110%);
+}
