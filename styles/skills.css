@@ -8,10 +8,17 @@
     max-width: 100%;
 }
 .skill{
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    justify-content: center;
+    align-items: center;
+    
     padding: 20px;
-    background-color: var(--third-bg-color);
-    text-align: center;
     width: 200px;
+    
+    text-align: center;
+
+    background-color: var(--third-bg-color);
     box-shadow: #0005 10px 10px 50px;
 }
 .skill-icon{

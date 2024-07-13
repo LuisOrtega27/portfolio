@@ -1,0 +1,60 @@
+.experience-container{
+    display: grid;
+    grid-template-columns: 4px 1fr;
+    gap: 5%;
+    margin-top: 5%;
+    padding-left: 15%;
+}
+.experience-line{
+    background-color: #fff;
+}
+
+.experience-container-content{
+    position: relative;
+}
+
+.experience-container-content > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-220px);
+}
+.experience-date{
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: var(--four-bg-color);
+
+    &::before{
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        /* thsi maintains the same height and width somehow... */
+        width: 20%;
+        height: 0;
+        padding-bottom: 20%;
+        /* ---------------------- */
+
+        background-color: var(--four-bg-color);
+        z-index: -1;
+        transform: translate(50%, -50%) rotate(45deg);
+    }
+}
+.experience-dot{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2em;
+    width: 2em;
+    background: var(--main-active-color);
+    border-radius: 50px 0px 50px 50px;
+    transform: translateX(190%) rotate(45deg);
+}
+
+.experience-title{}
+.experience-subtitle{}
+.experience-text{}
