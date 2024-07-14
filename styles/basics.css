@@ -4,6 +4,8 @@
 @import url(./skills.css);
 @import url(./portfolio.css);
 @import url(./exprerience.css);
+@import url(./contact.css);
+@import url(./farewell.css);
 
 :root {
   font-size: 16px;
@@ -62,4 +64,8 @@ body{
   height: 0.1em;
   background: var(--main-active-color);
   transform: translateX(-110%);
+}
+
+.content-section:nth-child(odd){
+  background: var(--third-bg-color);
 }

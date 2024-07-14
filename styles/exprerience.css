@@ -11,13 +11,18 @@
 
 .experience-container-content{
     position: relative;
+    margin-bottom: 10%;
 }
 
 .experience-container-content > div{
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translateX(-220px);
+    right: 0;
+    text-align: right;
+    width: 100%;
+    transform: translateX(-112%);
+    /* transform-origin: right; */
+    /* background-color: aqua; */
 }
 .experience-date{
     position: relative;
@@ -26,7 +31,7 @@
     background-color: var(--four-bg-color);
 
     &::before{
-        display: inline-block;
+        display: none;
         content: '';
         position: absolute;
         top: 50%;
@@ -46,15 +51,23 @@
 .experience-dot{
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
-    height: 2em;
-    width: 2em;
+    aspect-ratio: 1 / 1;
+    height: 1em;
     background: var(--main-active-color);
-    border-radius: 50px 0px 50px 50px;
-    transform: translateX(190%) rotate(45deg);
+    /* border-radius: 50px 0px 50px 50px; */
+    transform: translateY(-50%) translateX(190%) rotate(45deg);
 }
 
-.experience-title{}
-.experience-subtitle{}
-.experience-text{}
+.experience-title{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.experience-subtitle{
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 1em;
+
+}
+/* .experience-text{} */
