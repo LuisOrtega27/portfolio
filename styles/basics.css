@@ -24,7 +24,8 @@
 
   --text-color-passive: rgb(145,145,145);
   --text-color-active: rgb(255,255,255);
-
+  
+  scroll-behavior: smooth;
 }
 
 *{
@@ -36,14 +37,18 @@
 body{
   height: 100%;
   background-color: var(--main-bg-color);
+
 }
 
 #app{
+  position: relative ;
+
   width: 50%;
   min-height: 100%;
   margin: auto;
   background-color: var(--sec-bg-color);
   border: solid 2px var(--sec-active-color);
+  z-index: 1;
 }
 
 .content-section{

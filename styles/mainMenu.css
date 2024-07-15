@@ -1,7 +1,16 @@
 .main-menu{
+    position: sticky;
+    top: 0;
+    left: 0;
     display: grid;
     grid-template-columns: 50px 1fr;
-    /* background-color: aqua; */
+    background-color: var(--sec-bg-color);
+    margin-top: -2px;
+    width: 100%;
+
+    transition: top 0.3s ease;
+    
+    z-index: 2;
   }
   .devIcon{
     display: inline-block;
@@ -20,7 +29,7 @@
   }
   
   .main-menu > ul > li{
-    flex-basis: 150px;
+    flex-basis: 100px;
     list-style: none;
   }
   .main-menu > ul > li> a{
@@ -37,3 +46,6 @@
     color: var(--text-color-active);
   }
   
+  .main-menu > ul > li> a.active{
+    color: #fff;
+  }

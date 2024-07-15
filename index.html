@@ -9,7 +9,8 @@
     <title>Portfolio</title>
     
     <link rel="stylesheet" href="./styles/basics.css">
-    <script type="module" src="/main.js" defer></script>
+    <script  src="./scripts/mainMenu.js" defer></script>
+    <script  src="./scripts/portfolio.js" defer></script>
 
   </head>
   <body>
@@ -23,9 +24,11 @@
         </span>
         
         <ul>
-          <li><a href="#" class="active">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#section-about">About</a></li>
+          <li><a href="#section-skills">Skills</a></li>
+          <li><a href="#section-portfolio">Portfolio</a></li>
+          <li><a href="#section-experience">Experience</a></li>
+          <li><a href="#section-contact">Contact</a></li>
         </ul>
 
       </nav>
@@ -35,11 +38,18 @@
         <div class="mainInfo-text">
             <p>I'm <strong class="mainInfo-text-name">Luis Ortega</strong></p>
             <h6 class="mainInfo-text-profession">HTML, CSS, Javascrip, React.js</h6>
-            <button class="mainInfo-text-downloat-btn">Donwload CV</button>
+            
+            <a 
+              class="mainInfo-text-downloat-btn" 
+              href="./assets/Curriculum Vitae - Luis Ortega.pdf" 
+              download="Curriculum Vitae - Luis Ortega.pdf">
+              Donwload CV
+            </a>
+
         </div>
         
-        <div>
-          <img class="mainInfo-img" src="./assets/imgs/myPicture1.jpg" alt="Luis Ortega">
+        <div class="mainInfo-img-container">
+          <img class="mainInfo-img" src="./assets/imgs/ilustred-edit.jpg" alt="Luis Ortega">
         </div>
 
         <aside class="mainInfo-contact">
@@ -72,7 +82,7 @@
 
       <article class="content">
 
-        <section class="content-section section-about">
+        <section id="section-about" class="content-section section-about">
 
           <h2 class="section-title about-title">About <span class="section-title-figure"></span></h2>
 
@@ -85,7 +95,7 @@
           
         </section>
 
-        <section class="content-section section-skills">
+        <section id="section-skills" class="content-section section-skills">
 
           <h2 class="section-title skills-title">skills <span class="section-title-figure"></span></h2>
 
@@ -135,12 +145,12 @@
 
             <div class="skill">
               <picture class="skill-icon">
-                <img src="./assets/imgs/css-edit-icon.png" alt="css">
+                <img src="./assets/imgs/Python-logo.png" alt="Python">
               </picture>
-              <h2 class="skill-title">title7</h2>
+              <h2 class="skill-title">Python</h2>
             </div>
 
-            <div class="skill">
+            <!-- <div class="skill">
               <picture class="skill-icon">
                 <img src="./assets/imgs/css-edit-icon.png" alt="css">
               </picture>
@@ -152,89 +162,25 @@
                 <img src="./assets/imgs/css-edit-icon.png" alt="css">
               </picture>
               <h2 class="skill-title">title9</h2>
-            </div>
+            </div> -->
 
           </div>
           
         </section>
 
-        <section class="content-section section-portfolio">
+        <section id="section-portfolio" class="content-section section-portfolio">
 
           <h2 class="section-title portfolio-title">Portfolio <span class="section-title-figure"></span></h2>
 
-          <div class="portfolio-content">
+          <!-- Esta seccion se gerera a traves del script "portfolio.js" -->
+          <div class="portfolio-content"></div>
+          <!-- ========================================================= -->
 
-            <div class="project">
-
-              <img class="project-img" src="./assets/thumbnails/thumbnail-to_do_list-2.png" alt="to do list">
-              
-              <div class="project-info">
-
-                <div>
-                  <h4>Project Title</h4>
-                  <p>Whatever are going to be here</p>
-                  <a href="#" target="_blank">go to project</a>
-                </div>
-                
-              </div>
-
-            </div>
-
-            <div class="project">
-
-              <img class="project-img" src="./assets/thumbnails/thumbnail-to_do_list-2.png" alt="to do list">
-              
-              <div class="project-info">
-
-                <div>
-                  <h4>Project Title</h4>
-                  <p>Whatever are going to be here</p>
-                  <a href="#" target="_blank">go to project</a>
-                </div>
-                
-              </div>
-
-            </div>
-
-            <div class="project">
-
-              <img class="project-img" src="./assets/thumbnails/thumbnail-to_do_list-2.png" alt="to do list">
-              
-              <div class="project-info">
-
-                <div>
-                  <h4>Project Title</h4>
-                  <p>Whatever are going to be here</p>
-                  <a href="#" target="_blank">go to project</a>
-                </div>
-                
-              </div>
-
-            </div>
-
-            <div class="project">
-
-              <img class="project-img" src="./assets/thumbnails/thumbnail-to_do_list-2.png" alt="to do list">
-              
-              <div class="project-info">
-
-                <div>
-                  <h4>Project Title</h4>
-                  <p>Whatever are going to be here</p>
-                  <a href="#" target="_blank">go to project</a>
-                </div>
-                
-              </div>
-
-            </div>
-            
-          </div>
-            
-          <button class="porfolio-show-more">see more <div class="porfolio-show-more-arrow"></div></button>
+          <!-- <button class="porfolio-show-more">see more <div class="porfolio-show-more-arrow"></div></button> -->
 
         </section>
         
-        <section class="content-section section-experience">
+        <section id="section-experience" class="content-section section-experience">
 
           <h2 class="section-title experience-title">exprerience <span class="section-title-figure"></span></h2>
 
@@ -278,7 +224,7 @@
           
         </section>
         
-        <section class="content-section section-contact">
+        <section id="section-contact" class="content-section section-contact">
 
           <div class="contact-info">
             <svg class="contact-info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
