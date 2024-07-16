@@ -1,12 +1,18 @@
 'use strict'
 
-const mainMenu= document.querySelector('.main-menu')
+const mainnav= document.querySelector('.main-menu')
 
 const mainMenuBtns = document.querySelectorAll('.main-menu > ul > li > a')
+const mainMenu = document.querySelector('.main-menu > ul')
+const mainMenuCheckbox = document.querySelector('.main-menu > input')
+
 const contentSections = document.querySelectorAll('.content-section:not(.section-farewell)')
 
 let menuPos = 0;
 let hideMenuOnScroll = false
+
+if(window.innerWidth <= 600) hideMenuOnScroll = true
+
 
 if(hideMenuOnScroll){
 
@@ -15,9 +21,9 @@ if(hideMenuOnScroll){
         let currentScroll = document.documentElement.scrollTop;
     
         if (currentScroll > menuPos) {
-            mainMenu.setAttribute('style', `top:-50px;`) 
+            mainnav.setAttribute('style', `top:-60px;`) 
         }else{
-            mainMenu.setAttribute('style', `top: 0px;`) 
+            mainnav.setAttribute('style', `top: 0px;`) 
         }
         
         menuPos = currentScroll
@@ -26,7 +32,19 @@ if(hideMenuOnScroll){
 }
 
 
+const movilHiddeMenu = ()=>{
+    mainMenu.style = 'transform: translateX(100%)'
+    
+    mainMenuCheckbox.checked = false
+
+    setTimeout(()=>{
+        mainMenu.style = ''
+    },300)
+} 
+
 mainMenuBtns.forEach(btn =>{
+
+    btn.addEventListener('click', movilHiddeMenu)
 
     btn.addEventListener('click', ()=>{
         btn.classList.remove('active')

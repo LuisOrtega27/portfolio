@@ -43,6 +43,7 @@ body{
 #app{
   position: relative ;
 
+  overflow: hidden;
   width: 50%;
   min-height: 100%;
   margin: auto;

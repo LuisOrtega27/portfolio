@@ -1,9 +1,9 @@
 .skills-container{
     display: flex;
     flex-wrap: wrap;
-    /* flex-basis: 200px; */
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 15px;
+    width: fit-content;
     margin-top: 5%;
     max-width: 100%;
 }

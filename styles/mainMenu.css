@@ -73,6 +73,7 @@
 
 @media screen and (max-width:600px) {
   .main-menu{
+    position: fixed;
     grid-template-columns: 50px 50px;
     justify-content: space-between;
   }  
@@ -82,7 +83,8 @@
 
   .main-menu > ul{
     /* display: none; */
-    position: absolute;
+    position: fixed;
+    top: 0;
     flex-direction: column;
     font-size: 2em;
     gap: 2em;
