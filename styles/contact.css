@@ -7,7 +7,7 @@
 
 }
 .contact-info{
-
+    min-width: 300px;
     text-align: center;
     padding: 10px 15px;
     width: 40%;

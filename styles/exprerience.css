@@ -21,8 +21,6 @@
     text-align: right;
     width: 100%;
     transform: translateX(-112%);
-    /* transform-origin: right; */
-    /* background-color: aqua; */
 }
 .experience-date{
     position: relative;
@@ -37,11 +35,10 @@
         top: 50%;
         right: 0;
 
-        /* thsi maintains the same height and width somehow... */
-        width: 20%;
-        height: 0;
-        padding-bottom: 20%;
-        /* ---------------------- */
+        /* thsi maintains the same height and width*/
+        aspect-ratio: 1 / 1;
+        height: 70%;
+        /* ======================================= */
 
         background-color: var(--four-bg-color);
         z-index: -1;
@@ -70,4 +67,28 @@
     font-size: 1em;
 
 }
-/* .experience-text{} */
+
+@media screen and (max-width:800px){
+    
+
+    .section-experience{
+        padding-left: 20% !important;
+        padding-right: 5% !important;
+    }
+
+    .experience-date::before{
+        display: inline-block;
+    }
+    .experience-dot{
+        display: none;
+    }
+
+    .experience-container-content > div{
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+        width: 100%;
+        transform: translateX(-115%);
+    }
+}

@@ -1,51 +1,95 @@
 .main-menu{
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    background-color: var(--sec-bg-color);
-    margin-top: -2px;
-    width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  background-color: var(--sec-bg-color);
+  margin-top: -2px;
+  width: 100%;
 
-    transition: top 0.3s ease;
-    
-    z-index: 2;
+  transition: top 0.3s ease;
+  
+  z-index: 2;
+}
+.devIcon{
+  display: inline-block;
+  padding: 10px;
+}
+.devIcon>svg{
+  fill: var(--text-color-active);
+}
+.main-menu-btn{
+  display: none;
+  padding: 10px;
+  fill: var(--text-color-active);
+  background: none;
+  border: none;
+  transition: trasform 0.3s ease;
+
+  &:active{
+    transform: scale(0.9);
   }
-  .devIcon{
+}
+
+#toggleMenu{
+  display: none;
+}
+
+#toggleMenu:checked + ul {
+  display: flex;
+  transform: translateX(0%);
+}
+
+.main-menu > ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.main-menu > ul > li{
+  list-style: none;
+}
+
+.main-menu > ul > li> a{
+  display: inline-block;
+  padding: 10px 25px;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color-passive);
+  transition: color 0.3s ease;
+}
+.main-menu > ul > li> a:hover{
+  color: var(--text-color-active);
+}
+
+.main-menu > ul > li> a.active{
+  color: #fff;
+}
+
+@media screen and (max-width:600px) {
+  .main-menu{
+    grid-template-columns: 50px 50px;
+    justify-content: space-between;
+  }  
+  .main-menu-btn{
     display: inline-block;
-    padding: 10px;
   }
-  .devIcon>svg{
-    fill: var(--text-color-active);;
-  }
-
 
   .main-menu > ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  .main-menu > ul > li{
-    flex-basis: 100px;
-    list-style: none;
-  }
-  .main-menu > ul > li> a{
-    display: inline-block;
-    padding: 10px 25px;
+    /* display: none; */
+    position: absolute;
+    flex-direction: column;
+    font-size: 2em;
+    gap: 2em;
     width: 100%;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--text-color-passive);
-    transition: color 0.3s ease;
+    height: 100vh;
+    background: var(--main-bg-color);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
-  .main-menu > ul > li> a:hover{
-    color: var(--text-color-active);
-  }
-  
-  .main-menu > ul > li> a.active{
-    color: #fff;
-  }
+}

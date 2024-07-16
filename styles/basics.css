@@ -74,3 +74,18 @@ body{
 .content-section:nth-child(odd){
   background: var(--third-bg-color);
 }
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  :root{
+    font-size: 12px;
+  }
+
+  #app{
+    margin: 0;
+    width: 100%;
+  }
+
+}
