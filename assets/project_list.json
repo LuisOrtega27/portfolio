@@ -3,49 +3,91 @@
         {
             "path": "https://luisortega27.github.io/particles-background/",
             "title": "particles background",
-            "thumbnail": "./assets/thumbnails/thumbnail-particles_background.png",
+            "thumbnail": "./assets/thumbnails/particles-background.png",
             "description": "Efecto de particulas flotantes."
         },
         {
             "path": "https://luisortega27.github.io/to-do-list-2/",
             "title": "to  do list 2",
-            "thumbnail": "./assets/thumbnails/thumbnail-to_do_list-2.png",
+            "thumbnail": "./assets/thumbnails/to-do-list-2.png",
             "description": "Lista de tareas por hacer."
         },
         {
             "path": "https://luisortega27.github.io/wordle-counterfeit/",
             "title": "wordle counterfeit",
-            "thumbnail": "./assets/thumbnails/thumbnail-wordle_counterfeit.png",
+            "thumbnail": "./assets/thumbnails/wordle-counterfeit.png",
             "description": "Es una copia del juego wordle hecha con el unico proposito de practicar."
+        },
+        {
+            "path": "https://luisortega27.github.io/tic-tac-toe-react/",
+            "title": "tic tac toe with React",
+            "thumbnail": "./assets/thumbnails/tic-tac-toe-react.png",
+            "description": "juego de Tic tac toe hecho con React.js."
+        },
+        {
+            "path": "https://luisortega27.github.io/results-summary-component/",
+            "title": "results summary component",
+            "thumbnail": "./assets/thumbnails/results-summary-component.png",
+            "description": "results summary component (prueba de Front end mentor)."
+        },
+        {
+            "path": "https://luisortega27.github.io/age-calculator-app/",
+            "title": "age calculator app",
+            "thumbnail": "./assets/thumbnails/age-calculator-app.png",
+            "description": "age calculator app (prueba de Frontendmentor)."
+        },
+        {
+            "path": "https://luisortega27.github.io/calculator/",
+            "title": "calculator",
+            "thumbnail": "./assets/thumbnails/calculator.png",
+            "description": "calculadora simple."
+        },
+        {
+            "path": "https://luisortega27.github.io/tic-tac-toe/",
+            "title": "tic tac toe js vanilla",
+            "thumbnail": "./assets/thumbnails/tic-tac-toe.png",
+            "description": "tic tac toe js vanilla."
+        },
+        {
+            "path": "https://luisortega27.github.io/QR-code-component/",
+            "title": "QR code component",
+            "thumbnail": "./assets/thumbnails/QR-code-component.png",
+            "description": "QR code component (prueba de Frontendmentor)."
         },
         {
             "path": "https://luisortega27.github.io/weather-app/",
             "title": "weather app",
-            "thumbnail": "./assets/thumbnails/thumbnail-weather_app.png",
+            "thumbnail": "./assets/thumbnails/weather-app.png",
             "description": "Una aplicacion que muestra las condiciones climaticas del pais buscado."
         },
         {
             "path": "https://luisortega27.github.io/rain-background/",
             "title": "rain background",
-            "thumbnail": "./assets/thumbnails/thumbnail-rain_background.png",
+            "thumbnail": "./assets/thumbnails/rain-background.png",
             "description": "Efecto de lluvia en el fondo de la pagina hecha unicamente animacion de css."
         },
         {
             "path": "https://luisortega27.github.io/encryption-cease/",
             "title": "encryption cease",
-            "thumbnail": "./assets/thumbnails/thumbnail-encryption_cease.png",
+            "thumbnail": "./assets/thumbnails/encryption-cease.png",
             "description": "Encriptacion cesar"
         },
         {
             "path": "https://luisortega27.github.io/3d-effects/",
             "title": "3D effects",
-            "thumbnail": "./assets/thumbnails/thumbnail-3d_effects.png",
+            "thumbnail": "./assets/thumbnails/3d-effects.png",
             "description": "Efectos 3D"
+        },
+        {
+            "path": "https://luisortega27.github.io/canvas-experiments/",
+            "title": "cambas experiments",
+            "thumbnail": "./assets/thumbnails/canvas-experiments.png",
+            "description": "algunas pruebas con canvas."
         },
         {
             "path": "https://luisortega27.github.io/to-do-list/",
             "title": "to  do list (drag & drop)",
-            "thumbnail": "./assets/thumbnails/thumbnail-to_do_list.png",
+            "thumbnail": "./assets/thumbnails/to-do-list.png",
             "description": "(drag & drop) Lista de tareas por hacer."
         }
     ]
